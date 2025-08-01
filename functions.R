@@ -1,7 +1,7 @@
 #### packages ----
 library(mice)    ## used in `impute_vars()`
 library(ranger)  ## required in `mice`, used in `impute_vars()`
-library(survey)  ##used in `get_rake_weight_ind()`
+library(survey)  ## used in `get_rake_weight_ind()`
 
 
 #### get_gender_categories(): gender categorization ----
