@@ -1,0 +1,13 @@
+﻿REF_DATE,GEO,DGUID,Census year (2),"Age (in single years), average age and median age (128)",Gender (3a),UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS
+2021,British Columbia,2021A000259,2021,Total - Age,Total - Gender,,0,units,0,,141.1.1.1,5000880,,,,0
+2021,British Columbia,2021A000259,2021,Total - Age,Men+,,0,units,0,,141.1.1.2,2457510,,,,0
+2021,British Columbia,2021A000259,2021,Total - Age,Women+,,0,units,0,,141.1.1.3,2543365,,,,0
+2021,British Columbia,2021A000259,2021,0 to 14 years,Total - Gender,,0,units,0,,141.1.2.1,716900,,,,0
+2021,British Columbia,2021A000259,2021,0 to 14 years,Men+,,0,units,0,,141.1.2.2,369250,,,,0
+2021,British Columbia,2021A000259,2021,0 to 14 years,Women+,,0,units,0,,141.1.2.3,347650,,,,0
+2021,British Columbia,2021A000259,2021,15 to 64 years,Total - Gender,,0,units,0,,141.1.21.1,3267615,,,,0
+2021,British Columbia,2021A000259,2021,15 to 64 years,Men+,,0,units,0,,141.1.21.2,1614620,,,,0
+2021,British Columbia,2021A000259,2021,15 to 64 years,Women+,,0,units,0,,141.1.21.3,1652995,,,,0
+2021,British Columbia,2021A000259,2021,65 years and over,Total - Gender,,0,units,0,,141.1.82.1,1016360,,,,0
+2021,British Columbia,2021A000259,2021,65 years and over,Men+,,0,units,0,,141.1.82.2,473640,,,,0
+2021,British Columbia,2021A000259,2021,65 years and over,Women+,,0,units,0,,141.1.82.3,542720,,,,0
