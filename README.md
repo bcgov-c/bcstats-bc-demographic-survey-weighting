@@ -4,7 +4,7 @@
 # BC Demographic Survey Weighting
 ---
 
-This repo consists of code to produce standardized weights for the BC Demographic Survey.
+This repo consists of code to produce standardized weights for the BC Demographic Survey within the Data Innovation Program.
 
 In 2023, BC Stats conducted the BC Demographic Survey. More than 200,000 people responded to the 
 voluntary survey, providing information about many aspects of their identity (such as race, ethnicity, 
@@ -46,7 +46,7 @@ Code for this project is structured as follows:
 * In order to run properly, underlying BC Demographic Survey data must be available (i.e., in the DIP).
 Edit the "SET VALUES" section in `weighting_workflow.R` accordingly.
 
-Note: this code will not run outside of the DIP, as the underlying survey data is not included in the repo.
+Note: this code will not run outside of the DIP, as the underlying survey data is not included in the repo. A copy of this code-base has been made available within the Data Innovation Program to researchers. 
 
 ## Project Status
 
