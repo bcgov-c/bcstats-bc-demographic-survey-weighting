@@ -40,6 +40,9 @@ FOLDER_data <- file.path("path_to_data_folder")
 ## most recent BC Demographic data
 PATH_data   <- file.path(FOLDER_data, "name_of_bc_demographic_survey_data.csv")
 
+## where you wish to save results
+SAVE_path <- file.path("path_to_save_folder")
+
 
 #### 1. load the data ----
 ### * 1.0 load bc demographic survey data ----
@@ -198,7 +201,7 @@ for(i in seq_along(dup_hh_ids)) {
 
 ## save file
 write_csv(chsa_by_addr,
-          file = file.path(FOLDER_data, "Weighting",
+          file = file.path(SAVE_path, "Weighting",
                            paste0("chsa_by_address_", Sys.Date(), ".csv")))
 
 tmp <- imputed_demo_gender_age %>%
@@ -223,7 +226,7 @@ rm(tmp, chsa_by_addr, chsa_crosswalk, dup_chsa_hhid)
 ##   with missing values imputed in cdcsd, chsa_pre_2023, aq2hh_size_calc, gender and age group
 ##   with arbitrary values for NA hh_ids, and re-set chsa_pre_2023 for the few hh_ids with 2+ chsa_pre-2023
 write_csv(imputed_demo_gender_age,
-          file = file.path(FOLDER_data, "Weighting",
+          file = file.path(SAVE_path, "Weighting",
                            paste0("1_imputed_gender_age_geog_", Sys.Date(), ".csv")))
 
 
@@ -294,7 +297,7 @@ summary(as.factor(imputed_demo_self_gender_age$hh_id))
 ##   filtered data with age, gender and chsa_pre_2023 categories
 ##   with missing values imputed in cdcsd, chsa_pre_2023, aq2hh_size_calc, gender and age group
 write_csv(imputed_demo_self_gender_age,
-          file = file.path(FOLDER_data, "Weighting",
+          file = file.path(SAVE_path, "Weighting",
                            paste0("1b_imputed_self_gender_age_geog_", Sys.Date(), ".csv")))
 
 
@@ -493,6 +496,6 @@ trimmed_all_demo_gender_age %>% filter(is.na(wt_rake2_trim)) %>% nrow() ## just 
 ##   and final_wt2 (wt_rake_trim for random sample and 1 for self-selected), wt_rake2 (raked final_wt2
 ##   to BC pop by gender and age_group again as well as chsa_pre_2023), wt_rake2_trim
 write_csv(trimmed_all_demo_gender_age,
-          file = file.path(FOLDER_data, "Weighting",
+          file = file.path(SAVE_path, "Weighting",
                            paste0("2_weighted_gender_age_geog_", Sys.Date(), ".csv")))
 
